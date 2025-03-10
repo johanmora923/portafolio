@@ -5,12 +5,14 @@
 }
 body{
     background-color: #ecedec;
-    min-width: 400px;
-    
+    width: 100%;
 }
+
 main{
     container-type: inline-size;
     container-name: main;
+    width: 95%;
+    margin: auto;
 }
 .escondido{
     display: none;
@@ -50,7 +52,10 @@ main{
     container-type: inline-size;
     container-name: welcome;
     justify-content: center;
-
+}
+.presentation__container{
+    container-type: inline-size;
+    container-name: presentation;
 }
 .presentation{
     margin: 5%;    
@@ -664,6 +669,20 @@ a{
     }
 }
 
+@container presentation (max-width:500px){
+    .welcome{
+        flex-direction: column;
+    }
+    .presentation{
+        margin-left: 10%;
+    }
+    .foto__container{
+        margin-left: 10%;
+        margin-top: 10px ;
+        margin-bottom: 30px;
+    }
+}
+
 @container main (min-width:1140px){
     .certificado{
         height: 500px;
@@ -724,17 +743,6 @@ a{
     }
 }
 @container main (max-width:780px){
-    .welcome{
-        flex-direction: column;
-    }
-    .presentation{
-        margin-left: 10%;
-    }
-    .foto__container{
-        margin-left: 10%;
-        margin-top: 10px ;
-        margin-bottom: 30px;
-    }
     .project{
         width: 80%;
     }
