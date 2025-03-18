@@ -14,7 +14,7 @@ const [openModal, setOpenModal] = useState(false)
         <Header setOpenModal={setOpenModal} />
         {openModal ? <ContactModal setOpenModal={setOpenModal} openModal={openModal} /> : ''}
         <Projects/>
-        <AboutMe/>S
+        <AboutMe/>.
         <Learning/>
         <Footer />
     </div>
