@@ -35,7 +35,7 @@ export const Header = ({setOpenModal}) => {
             <p className="text-lg mt-2">
                 Soy{" "}
                 <span className="text-blue-500 font-medium">
-                Desarrollador Web Frontend
+                Desarrollador Web full-stack
                 </span>
             </p>
             <p className="mt-4 text-gray-700">
