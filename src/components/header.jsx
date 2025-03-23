@@ -26,7 +26,7 @@ export const Header = ({setOpenModal}) => {
 
         {/* Welcome Section */}
         <div className="flex flex-col md:flex-row justify-center items-center bg-white border-b-2 border-gray-200 py-8">
-            <div className="w-60 h-60 min-w-[84px] min-h-[54px] rounded-lg bg-cover bg-center bg-[url('/mifoto.png')] mx-4 shadow hover:scale-105 transition-transform duration-300"></div>
+            <div className="w-60 h-60 min-w-[84px] min-h-[54px] rounded-lg bg-cover bg-center bg-[url('/mifoto.png')] mx-4  hover:scale-105 transition-transform duration-300"></div>
             <div className="mt-4 md:mt-0 mx-4 text-center md:text-left">
             <h3 className="text-sm text-gray-600">Hola, mi nombre es</h3>
             <h1 className="text-2xl md:text-4xl font-semibold text-blue-500 mt-2">
@@ -35,7 +35,7 @@ export const Header = ({setOpenModal}) => {
             <p className="text-lg mt-2">
                 Soy{" "}
                 <span className="text-blue-500 font-medium">
-                Desarrollador Web full-stack
+                Desarrollador Web Frontend jr
                 </span>
             </p>
             <p className="mt-4 text-gray-700">

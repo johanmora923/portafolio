@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaDatabase } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import { ToachNotification } from "./toachNotification";
 
 const Projects = () => {
     const projectData = [
@@ -65,6 +66,7 @@ const Projects = () => {
 
     return (
         <div className="py-8 bg-gray-100">
+        <ToachNotification />
         <h2 className="text-3xl font-bold text-center text-blue-500 mb-8">
             Proyectos
         </h2>
@@ -80,7 +82,7 @@ const Projects = () => {
                 </h3>
                 <iframe
                 src={project.previewLink}
-                className="w-full h-64 rounded-lg mb-4 border-0 pointer-events-none"
+                className="w-full h-64 rounded-lg mb-4 border-0 "
                 title={`${project.title} preview`}
                 ></iframe>
                 <p className="text-gray-700 text-center mb-4">

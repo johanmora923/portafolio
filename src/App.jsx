@@ -6,8 +6,11 @@ import { useState } from "react"
 import ContactModal from "./components/modal"
 import Footer from "./components/footer"
 
+
 function App() {
 const [openModal, setOpenModal] = useState(false)
+
+
 
   return (
     <div>

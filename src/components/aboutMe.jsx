@@ -28,6 +28,18 @@ const AboutMe = () => {
         question: "¿Estás disponible para trabajar en proyectos remotos?",
         answer: "Sí, estoy disponible para trabajar de manera remota y colaborar en proyectos desafiantes sin importar la ubicación.",
         },
+        {
+            question: "¿Qué tecnologías estás aprendiendo actualmente?",
+            answer: "Actualmente estoy aprendiendo tecnologías como TypeScript, GraphQL, y Next.js, con el objetivo de ampliar mis habilidades y conocimientos en el desarrollo web, mi mision es ser Full-Stack.",
+        },
+        {
+            question: "¿Cuál es tu enfoque al trabajar en equipo?",
+            answer: "Mi enfoque al trabajar en equipo es la colaboración, la comunicación efectiva y el respeto mutuo, con el objetivo de lograr los mejores resultados en cada proyecto.",
+        },
+        {
+            question: "tambien trabajas backend?",
+            answer: "Sí, aunque mi fuerte es el frontend, tambien tengo conocimiento en el area de backend asi como integracion con api y manejo de bases de datos con tecnologias como mySQL y progreSQL.",
+        }
     ];
 
     return (

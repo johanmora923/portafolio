@@ -2,6 +2,7 @@ import React from "react";
 import { FaNodeJs, FaPython, FaGitAlt, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
 import { LiaFreeCodeCamp } from "react-icons/lia";
+import { QuoteCard } from "./comment"
 
 const Learning = () => {
     const courses = [
@@ -76,6 +77,10 @@ const Learning = () => {
             ))}
             </div>
         </div>
+        <QuoteCard
+            quote="La educación autodidacta es, creo firmemente, el único tipo de educación que existe."
+            author="isaac asimov"
+        />
         </div>
     );
 };
