@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { IoCloseOutline } from 'react-icons/io5';
 import { useLanguage } from '../context/lenguajeProvider';
-import ToastNotification from './ToastNotification'; // Ajusta la ruta
+import ToastNotification from './toachNotification'; // Ajusta la ruta
 
 const ContactModal = ({ setOpenModal }) => {
   const { language } = useLanguage();
