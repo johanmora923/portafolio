@@ -1,45 +1,51 @@
-import { useEffect, useState } from "react";
-import { IoClose } from "react-icons/io5"; // React Icons
+// src/components/ToastNotification.jsx
+import React, { useEffect, useState } from 'react';
+import { IoClose } from 'react-icons/io5';
+import { useLanguage } from '../context/lenguajeProvider';
 
-export const ToachNotification = () => {
-    const [viewNotification, setViewNotification] = useState(false);
-    const [closeNotification, setCloseNotification] = useState(false);
+const ToastNotification = ({ message }) => {
+  const { language } = useLanguage();
+  const [isVisible, setIsVisible] = useState(true);
 
-    const handleViewNotification = () => {
-        if (window.scrollY  >= 300 && !closeNotification) {
-        setViewNotification(true);
-        } 
-        else {
-        setViewNotification(false);
-        }
-    };
+  const content = {
+    es: {
+      closeAriaLabel: 'Cerrar notificación',
+    },
+    en: {
+      closeAriaLabel: 'Close notification',
+    },
+  };
 
-    const handleCloseNotification = () => {
-        setViewNotification(false);
-        setCloseNotification(true);
-    };
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(false), 5000); // Oculta tras 5 segundos
+    return () => clearTimeout(timer);
+  }, []);
 
-    useEffect(() => {
-        window.addEventListener("scroll", handleViewNotification);
-        return () =>
-        window.removeEventListener("scroll", handleViewNotification);
-    });
+  const handleClose = () => {
+    setIsVisible(false);
+  };
 
-    return (
-        <div
-        className={`fixed bottom-20 z-50 right-5 bg-blue-500 text-white p-4 rounded-lg shadow-lg transition-transform duration-300 ${
-            viewNotification ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-        }`}
+  if (!message || !isVisible) return null;
+
+  return (
+    <div
+      className="fixed bottom-6 right-6 z-50 bg-blue-600 text-white p-4 rounded-xl shadow-2xl max-w-sm w-full transition-all duration-300 ease-in-out transform translate-y-0 opacity-100"
+      role="alert"
+      aria-live="polite"
+      aria-label={language === 'es' ? 'Notificación' : 'Notification'}
+    >
+      <div className="flex items-center justify-between gap-4">
+        <span className="text-sm font-medium leading-tight">{message}</span>
+        <button
+          onClick={handleClose}
+          className="flex-shrink-0 text-white hover:text-gray-200 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 rounded-full"
+          aria-label={content[language].closeAriaLabel}
         >
-        <div className="flex items-center justify-between">
-            <span>Los proyectos en este portafolio son personales, no fueron creados para terceros</span>
-            <button
-            onClick={handleCloseNotification}
-            className="ml-4 text-white hover:text-gray-300 transition"
-            >
-            <IoClose size={20} />
-            </button>
-        </div>
-        </div>
-    );
+          <IoClose size={20} />
+        </button>
+      </div>
+    </div>
+  );
 };
+
+export default ToastNotification;

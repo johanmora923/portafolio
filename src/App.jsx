@@ -5,6 +5,7 @@ import Learning from "./components/learning"
 import { useState } from "react"
 import ContactModal from "./components/modal"
 import Footer from "./components/footer"
+import LanguageProvider  from "./context/lenguajeProvider"
 
 
 function App() {
@@ -14,12 +15,14 @@ const [openModal, setOpenModal] = useState(false)
 
   return (
     <div>
-        <Header setOpenModal={setOpenModal} />
-        {openModal ? <ContactModal setOpenModal={setOpenModal} openModal={openModal} /> : ''}
-        <Projects/>
-        <AboutMe/>.
-        <Learning/>
-        <Footer />
+        <LanguageProvider>
+          <Header setOpenModal={setOpenModal} />
+          {openModal ? <ContactModal setOpenModal={setOpenModal} openModal={openModal} /> : ''}
+          <Projects/>
+          <AboutMe/>.
+          <Learning/>
+          <Footer setOpenModal={setOpenModal}/>
+        </LanguageProvider>
     </div>
   )
 }
