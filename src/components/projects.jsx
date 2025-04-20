@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { FaReact, FaHtml5, FaCss3Alt, FaNodeJs, FaDatabase } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
-import { ToachNotification } from './toachNotification'; // Asumo que es ToastNotification
 import  {useLanguage}  from '../context/lenguajeProvider';
 
 const Projects = () => {
@@ -104,7 +103,6 @@ const Projects = () => {
 
   return (
     <section className="bg-gray-100 py-12">
-      <ToachNotification />
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-3xl font-bold text-blue-600 text-center">
