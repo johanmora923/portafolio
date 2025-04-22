@@ -7,7 +7,7 @@ const Footer = ({ setOpenModal }) => {
 
   const content = {
     es: {
-      message: 'Desarrollado con pasión por <span className="text-blue-500 font-semibold">Johan Mora</span>',
+      message: 'Desarrollado por  <span className="text-blue-500 font-semibold">Johan Mora</span>',
       links: [
         { name: 'Sobre Mí', href: '#sobre-mi' },
         { name: 'Proyectos', href: '#proyectos' },
@@ -23,7 +23,7 @@ const Footer = ({ setOpenModal }) => {
       copyright: `© ${new Date().getFullYear()} Johan Mora. Todos los derechos reservados.`,
     },
     en: {
-      message: 'Built with passion by <span className="text-blue-500 font-semibold">Johan Mora</span>',
+      message: 'Built by <span className="text-blue-500 font-semibold">Johan Mora</span>',
       links: [
         { name: 'About Me', href: '#sobre-mi' },
         { name: 'Projects', href: '#proyectos' },
