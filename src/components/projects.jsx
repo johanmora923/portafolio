@@ -18,10 +18,10 @@ const Projects = () => {
 
   const projectData = [
     {
-      title: { es: 'Auction', en: 'Auction' },
+      title: { es: 'BillingPro', en: 'BillingPro' },
       description: {
-        es: 'Auction es una plataforma de subastas en línea diseñada para facilitar la compra y venta de productos mediante un sistema de pujas en tiempo real. Construida con React, Node.js y MySQL, esta aplicación prioriza la escalabilidad, rapidez y una experiencia de usuario fluida, integrando interfaces modernas y optimizadas para dispositivos móviles.',
-        en: 'Auction is an online auction platform designed to facilitate the buying and selling of products through a real-time bidding system. Built with React, Node.js, and MySQL, this application prioritizes scalability, speed, and a seamless user experience, integrating modern, mobile-optimized interfaces.',
+        es: 'El Sistema de Facturación Inteligente es una solución completa, diseñada para optimizar procesos comerciales mediante una interfaz intuitiva y una arquitectura backend robusta. Está pensado como una herramienta escalable y personalizable que se adapta a diferentes tipos de negocios.',
+        en: '',
       },
       tools: [
         { name: 'React', icon: <FaReact className="text-cyan-400 text-3xl" /> },
@@ -29,8 +29,8 @@ const Projects = () => {
         { name: 'MySQL', icon: <FaDatabase className="text-blue-600 text-3xl" /> },
         { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-3xl" /> },
       ],
-      image: '/projects/auction.jpg', // Añade una imagen en public/projects
-      previewLink: 'https://aution.vercel.app/',
+      image: '/BillingPro.png', // Añade una imagen en public/projects
+      previewLink: 'https://billing-pro.vercel.app/',
       codeLink: 'https://aution.vercel.app/', // Actualiza si tienes un enlace a GitHub
     },
     {
