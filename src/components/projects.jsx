@@ -21,7 +21,7 @@ const Projects = () => {
       title: { es: 'BillingPro', en: 'BillingPro' },
       description: {
         es: 'El Sistema de Facturación Inteligente es una solución completa, diseñada para optimizar procesos comerciales mediante una interfaz intuitiva y una arquitectura backend robusta. Está pensado como una herramienta escalable y personalizable que se adapta a diferentes tipos de negocios.',
-        en: '',
+        en: 'The Intelligent Billing System is a comprehensive solution designed to optimize commercial processes through an intuitive interface and a robust backend architecture. It is envisioned as a scalable and customizable tool that adapts to different types of businesses.',
       },
       tools: [
         { name: 'React', icon: <FaReact className="text-cyan-400 text-3xl" /> },
