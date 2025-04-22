@@ -204,7 +204,7 @@ const Header = ({ setOpenModal }) => {
                 <FaLinkedin />
               </a>
               <a
-                href="https://wa.me/+584129279923"
+                href="https://wa.me/+573014866694"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-green-600 hover:text-green-800 transition-transform transform hover:scale-110"
