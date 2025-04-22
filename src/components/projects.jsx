@@ -29,9 +29,9 @@ const Projects = () => {
         { name: 'MySQL', icon: <FaDatabase className="text-blue-600 text-3xl" /> },
         { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-3xl" /> },
       ],
-      image: '/BillingPro.png', // Añade una imagen en public/projects
+      image: '/BillingPro.png', 
       previewLink: 'https://billing-pro.vercel.app/',
-      codeLink: 'https://aution.vercel.app/', // Actualiza si tienes un enlace a GitHub
+      codeLink: 'https://github.com/johanmora923/BillingPro', // 
     },
     {
       title: { es: 'Webfrilance', en: 'Webfrilance' },
@@ -45,7 +45,7 @@ const Projects = () => {
         { name: 'MySQL', icon: <FaDatabase className="text-blue-600 text-3xl" /> },
         { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-3xl" /> },
       ],
-      image: '/projects/webfrilance.jpg',
+      image: '/webfrilance.png',
       previewLink: 'https://webfrilance.vercel.app',
       codeLink: 'https://github.com/johanmora923/frontend-webfrilance',
     },
@@ -61,9 +61,9 @@ const Projects = () => {
         { name: 'CSS', icon: <FaCss3Alt className="text-blue-500 text-3xl" /> },
         { name: 'Node.js', icon: <FaNodeJs className="text-green-600 text-3xl" /> },
       ],
-      image: '/projects/la-vieja-game.jpg',
+      image: '/laVieja.png',
       previewLink: 'https://la-vieja-game.vercel.app/',
-      codeLink: 'https://github.com/johanmora923/Rico-pollo', // Corrige si el enlace es incorrecto
+      codeLink: 'https://github.com/johanmora923/Rico-pollo',
     },
     {
       title: { es: 'Rico Pollo Rest', en: 'Rico Pollo Restaurant' },
@@ -74,9 +74,9 @@ const Projects = () => {
       tools: [
         { name: 'HTML', icon: <FaHtml5 className="text-red-500 text-3xl" /> },
         { name: 'CSS', icon: <FaCss3Alt className="text-blue-500 text-3xl" /> },
-        { name: 'JavaScript', icon: <FaHtml5 className="text-yellow-500 text-3xl" /> }, // Corrige el ícono si es necesario
+        { name: 'JavaScript', icon: <FaHtml5 className="text-yellow-500 text-3xl" /> }, 
       ],
-      image: '/projects/rico-pollo.jpg',
+      image: '/ricopollorrest.png',
       previewLink: 'https://ricopollorrest.netlify.app/',
       codeLink: 'https://github.com/johanmora923/Rico-pollo',
     },
@@ -131,7 +131,7 @@ const Projects = () => {
                     ? `Captura del proyecto ${project.title.es}`
                     : `Screenshot of the project ${project.title.en}`
                 }
-                className="w-full h-48 object-cover"
+                className="w-95 h-50 object-cover"
                 loading="lazy"
               />
               <div className="p-6 flex flex-col items-center">
